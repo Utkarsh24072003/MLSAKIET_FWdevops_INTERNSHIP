@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Calculator</title>
+  <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+  <div class="calc-container">
+    <input type="text" id="calc-display" disabled>
+    <div class="btn-container">
+      <button onclick="resetDisplay()">AC</button>
+      <button onclick="removeLast()">←</button>
+      <button onclick="insertSymbol('%')">%</button>
+      <button onclick="insertSymbol('/')">÷</button>
+      <button onclick="insertSymbol('7')">7</button>
+      <button onclick="insertSymbol('8')">8</button>
+      <button onclick="insertSymbol('9')">9</button>
+      <button onclick="insertSymbol('*')">×</button>
+      <button onclick="insertSymbol('4')">4</button>
+      <button onclick="insertSymbol('5')">5</button>
+      <button onclick="insertSymbol('6')">6</button>
+      <button onclick="insertSymbol('-')">−</button>
+      <button onclick="insertSymbol('1')">1</button>
+      <button onclick="insertSymbol('2')">2</button>
+      <button onclick="insertSymbol('3')">3</button>
+      <button onclick="insertSymbol('+')">+</button>
+      <button onclick="insertSymbol('0')">0</button>
+      <button onclick="insertSymbol('.')">.</button>
+      <button onclick="computeResult()" class="equal">=</button>
+    </div>
+  </div>
+  <script src="cal.js"></script>
+</body>
+</html>
